@@ -1,0 +1,52 @@
+.loyaut-container{
+    display: flex;
+    justify-content: flex-start;
+    // flex-direction: column;
+    position: relative;
+
+    .page{
+        display: flex;
+        position: relative;
+    }
+
+    .side-bar-menu{
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transition: all ease .5s;
+        border-right: 2px solid white;
+    }
+
+    .page-container{
+        // padding: 20px;
+        width: calc(100% - 250px);
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transition: all ease .5s;
+        background-color: #F1F3F4;
+        .header{
+            width: 100%;
+           height: 7vh;
+        }
+
+        .children{
+            width: 100%;
+            height: 93vh;
+            padding: 20px;
+        }
+    }
+
+    .close-side-bar{
+        transition: all ease .5s;
+        width: 56px;
+    }
+
+    .open-page-container{
+        width: calc(100% - 56px);
+        transition: all ease .5s;
+    }
+}

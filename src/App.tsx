@@ -1,10 +1,9 @@
-import React from 'react';
-import AppContainer from './containers/AppContainer';
+import AppContainer from './container/AppContainer';
+
 
 function App() {
-  return (
-    <AppContainer/>
-  );
+
+  return <AppContainer/>;
 }
 
 export default App;

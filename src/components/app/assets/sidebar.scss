@@ -1,0 +1,26 @@
+.sidebar-container{
+    background-color: #65D8FD;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    .sidebar-header{
+        width: 100%;
+        height: 7vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        .role-title{
+            color: white;
+            font-weight: bold;
+            text-overflow: ellipsis; 
+             overflow: hidden; 
+             white-space: nowrap;
+        }
+    }
+    /* width */
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }

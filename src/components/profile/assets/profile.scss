@@ -1,0 +1,22 @@
+.profile-container{
+    
+    .profile-header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .profile-img{
+            width: 180px;
+            height: 200px;
+        }
+
+        .profile-info{
+            width: calc(100% - 180px);
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+    
+}
