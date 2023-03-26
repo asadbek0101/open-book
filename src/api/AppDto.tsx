@@ -1,48 +1,37 @@
-export enum RouterLink{
-    Schools = '/schools',
-    Teachers = '/teachers',
-    Students = '/students',
-    Lessons = '/lessons/id',
-    Books = '/books',
-    Articles = '/articles',
-    Settings = '/settings',
-    TestS = '/tests',
-    Glassorys = '/glassorys',
-    Informations = '/informations',
-    News = '/news'
+import React from "react";
+
+export interface MenuProps{
+    readonly data: any;
+    readonly selectMenu: (menu: any) => void;
 }
 
-export enum SideMenu{
-    Opened = 'open',
-    Closed = 'close'
+export interface IconProps{
+    readonly size?: number;
+    readonly color?: string;
 }
 
-export enum Login{
-    Found = 'success',
-    NotFound = 'not found'
+export enum RoutesTypePath{
+    HomeContainer = '/',
+    BooksContainerPath = '/books/:tab?',
+    LessonsContainerPath = '/lessons/:tab?',
+    ArticlesContainerPath = '/articles/:tab?',
+    TestsContainerPath = '/tests/:tab?',
+    GlassorysContainerPath = '/glassorys/:tab?',
+    InforationsContainerPath = '/informations/:tab?',
+    NewsContainerPath = '/news/:tab?',
 }
 
-export enum Lang {
-    Uzbek = 'uzb',
-    Russian = 'rus',
-    English = 'eng'
+export enum RoutesType{
+    HomeContainer = '/',
+    BooksContainer = '/books',
+    LessonsContainer = '/lessons',
+    ArticlesContainer = '/articles',
+    TestsContainer = '/tests',
+    GlassorysContainer = '/glassorys',
+    InforationsContainer = '/informations',
+    NewsContainer = '/news',
 }
 
-export interface User {
-    readonly username: string;
-    readonly password: string; 
-}
-
-export interface i18Schome {
-    readonly SHCOOLS : string;
-    readonly LESSONS: string;
-    readonly STUDENTS: string;
-    readonly TEACHERS: string;
-    readonly BOOKS: string;
-    readonly SETTINGS: string;
-    readonly ARTICLES: string;
-    readonly TESTS: string;
-    readonly GLASSORYS: string;
-    readonly INFORMATIONS: string;
-    readonly NEWS: string;
+export interface HeaderButtonProps{
+    readonly getValue: (value: string)=>void;
 }

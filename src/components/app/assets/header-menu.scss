@@ -1,0 +1,17 @@
+
+
+.app-header-menu-children{
+    cursor: pointer;
+    border-left: 2px solid white;
+    color: white;
+    transition: all ease .2s;
+}
+
+.app-lost-item{
+    border-right: 2px solid white;
+}
+
+.active-item{
+    // font-weight: bold;
+    color: black;
+}

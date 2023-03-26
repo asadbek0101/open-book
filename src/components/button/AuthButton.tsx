@@ -1,14 +1,11 @@
-import React, { ReactNode } from "react";
-
+import React from "react";
 import "./assets/button.scss";
 
-interface Props{
-    readonly children: ReactNode;
-    readonly onClick: ()=>void;
-}
 
-export default function AuthButton({children, onClick}:Props){
+export default function AuthButton(){
     return (
-        <button onClick={()=>onClick()} className="auth-button">{children}</button>
+        <button className="auth-button">
+            Auth Button
+        </button>
     )
 }
